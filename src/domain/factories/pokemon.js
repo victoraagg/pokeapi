@@ -18,12 +18,21 @@ export default class PokemonFactory {
         
     }
 
-    static pokemonEntity(name, resource_uri, sprites) {
-        
+    static pokemonEntity({name, resource_uri, sprites}) {
+        return new PokemonEntity({
+            name, 
+            resource_uri, 
+            sprites: sprites && sprites.map(PokemonFactory.spriteEntity)
+        })
     }
 
     static spriteEntity(name, resource_uri, image, pokemon) {
-        
+        return new SpriteEntity({
+            id, 
+            resource_uri, 
+            image,
+            pokemon: PokemonFactory.pokemonEntity(pokemon)
+        })
     }
 
 }

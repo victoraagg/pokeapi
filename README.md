@@ -1,4 +1,3 @@
 # PokéAPI
-Implementación y uso de la PokéAPI V2
-------
-PokéAPI ref. [link](https://pokeapi.co/).
+:tiger: Implementación y uso de la PokéAPI V2 :cat:
+Referencia de la API: [link](https://pokeapi.co/)
